@@ -1,5 +1,7 @@
 {
   "name": "ember-import",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "magnific-popup": "^1.1.0"
   }
 }

@@ -19,5 +19,13 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  app.import('./bower_components/magnific-popup/dist/jquery.magnific-popup.min.js'); //not included in production build
+  app.import('./vendor/plain.js'); //not included in production build
+
+  app.import({
+    production: './vendor/plain.js', //not included in production build
+    development: './vendor/plain.js'
+  });
+
   return app.toTree();
 };
